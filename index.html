@@ -76,6 +76,7 @@
 
 
 			<div class="chatBox" >
+
 				<div class="message" v-for="message in contacts[currentUser].messages" :class="{'sent' : (message.status == 'sent'), 'received' : (message.status == 'received')}">
 					<p class="mex">
 						<ion-icon name="chevron-down-outline" :class="{'sent-color' : (message.status == 'sent'), 'received-color' : (message.status == 'received')}"></ion-icon>
@@ -83,6 +84,7 @@
 						<span>{{message.date}}</span>
 					</p>
 				</div>
+				
 			</div>
 			
 			
